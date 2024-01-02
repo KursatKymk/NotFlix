@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "emirhan_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Movie Design</title>
+</head>
+<body>
+    <!--Navbar yukarıda sidebar sol tarafta-->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class ="logo">NotFlix</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a class = 'menu-list-item' style="font-weight: bold;" href="home.html">Home</a></li>
+                    <li class="menu-list-item1">~All The Content You Are Looking For~</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class = 'profile-picture' src="images/picture.jpeg" alt = "">
+                <div class="profile-text-container">
+                    <span class = "profile-text">Profile</span>
+                    <i id= "downArrow" class="fa-solid fa-caret-down"></i>
+                    <button class="logout-button"id="logoutButton" onclick="logout()">Logout</button>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <!--search bar test-->
+        <div class="search-container">
+            
+            <div class="search-icon" id="searchIcon"><i class="left-menu-icon fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search...">
+          </div>
+        <!--search bar test-->
+        <a href="home.html"><i class="left-menu-icon fa-solid fa-house"></i></a>
+        
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/doktorlar.png');"
+            >
+            <img class = "featured-title" src = "" alt ="">
+            <p class = "featured-desc">Doktorlar</p> <br>
+            <p class = "featured-sum"> </p>Doktorlar is a Turkish medical and drama television series, produced by Medyapım, starring Kutsi, Özilhan, Göksun, Aksoy, Güner, and Bozoğlu, aired from 2006-2011 on Show TV. </p></p>
+            <a href = "https://www.youtube.com/@DoktorlarDizisi">
+                <button class = "featured-button">Watch</button>
+            </a>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Top Cast</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/kutsi.jpeg" alt="">
+                            <span class ="movie-list-item-title">Kutsi</span>
+                            <p class="movie-list-item-desc">Levent Atahanlı is an important neurosurgeon.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/bekir.jpeg" alt="">
+                            <span class ="movie-list-item-title">Bekir Aksoy</span>
+                            <p class="movie-list-item-desc">Suat Birtan is a cardiovascular surgeon.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/melike.jpeg" alt="">
+                            <span class ="movie-list-item-title">Melike Güner</span>
+                            <p class="movie-list-item-desc">Zenan Parlar Birtan is the chief assistant.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/yasemin.png" alt="">
+                            <span class ="movie-list-item-title">Yasemin Özilhan</span>
+                            <p class="movie-list-item-desc">Ela Altındağ is an assistant.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/devrim.webp" alt="">
+                            <span class ="movie-list-item-title">Devrim Nas</span>
+                            <p class="movie-list-item-desc">Arslan İbrahimoğlu is an aesthetic and plastic surgeon.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/yesim.jpg" alt="">
+                            <span class ="movie-list-item-title">Yeşim Ceren Bozoğlu</span>
+                            <p class="movie-list-item-desc">Fikret Eralp is a general surgeon and head of the surgical department.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/mehtap.webp" alt="">
+                            <span class ="movie-list-item-title">Mehtap Altunok</span>
+                            <p class="movie-list-item-desc">Jülide Aydın is an obstetric surgeon.</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">More Like This</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <a href = "https://www.youtube.com/@MucizeDoktor"> 
+                            <img class ="movie-list-item-img-banner"src="images/mucize-doktor.webp" alt="">
+                            <span class ="movie-list-item-title">Mucize Doktor</span>
+                            <p class="movie-list-item-desc">
+                                Mucize Doktor is a Turkish medical drama TV series, adapted from Good Doctor, produced by MF Yapım. It aired its first episode in 2019 and concluded in May 2021.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <a href = "https://www.youtube.com/@HekimogluKanalD"> 
+                            <img class ="movie-list-item-img-banner"src="images/hekimoglu.jpg" alt="">
+                            <span class ="movie-list-item-title">Hekimoğlu</span>
+                            <p class="movie-list-item-desc">
+                                Hekimoğlu is a Turkish medical drama and comedy television series, adapted from the American series House M.D., produced by Karga Seven and OJO Pictures.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <a href = "https://www.youtube.com/@hayatbuguntv"> 
+                            <img class ="movie-list-item-img-banner"src="images/hayatbugun.jpg" alt="">
+                            <span class ="movie-list-item-title">Hayat Bugün</span>
+                            <p class="movie-list-item-desc">Hayat Bugün is a Turkish medical and drama television series, adapted from the 2018 American series New Amsterdam, produced by O3 Medya and starring Ulaş Tuna Astepe, Hazar Ergüçlü, Tansel Öngel, and Hande Doğandemir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="searchBar.js"></script>
+    <script src="slider.js"></script>
+    <script src="colorMode.js"></script>
+    <script src="logout.js"></script>
+
+</body>
+</html>

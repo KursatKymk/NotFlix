@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "tlhstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Ezel</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class ="logo">NotFlix</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a class = 'menu-list-item' style="font-weight: bold;" href="home.html">Home</a></li>
+                    <li class="menu-list-item1">~All The Content You Are Looking For~</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class = 'profile-picture' src="images/picture.jpeg" alt = "">
+                <div class="profile-text-container">
+                    <span class = "profile-text">Profile</span>
+                    <i id= "downArrow" class="fa-solid fa-caret-down"></i>
+                    <button class="logout-button"id="logoutButton" onclick="logout()">Logout</button>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <!--search bar test-->
+        <div class="search-container">
+            
+            <div class="search-icon" id="searchIcon"><i class="left-menu-icon fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search...">
+          </div>
+        <!--search bar test-->
+        <a href="home.html"><i class="left-menu-icon fa-solid fa-house"></i></a>
+        
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/ezel.jpg');"
+            >
+            <img class = "featured-title" src = "" alt ="">
+            <p class = "featured-desc">Ömer is a young man who lives a simple life by working in his father's workshop. Returning from military service, she plans to marry her lover Eyşan. But when he suddenly finds himself in prison for murder, his life is thrown into turmoil. Uncle Ramiz, whom he met while in prison, becomes his second father.</p>
+            <a href = "https://www.youtube.com/watch?v=FSo8aRocl9w&list=PLsvJ8lYSMnLufc5q0mYY_JsQS7-oplO0r">
+                <button class = "featured-button">Watch</button>
+            </a>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">TOP CAST</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/Bayraktar.webp" alt="">
+                            <span class ="movie-list-item-title">Kenan İmirzalıoğlu </span>
+                            <p class="movie-list-item-desc">Ezel Bayraktar: a self-improved man who, after what he has been through, still wonders about the reasons for the betrayal he suffered and has dedicated the rest of his life to taking revenge on everyone involved in this betrayal. With the help of Ramiz Karaeski, he has added knowledge, a new world view and money to his Omer identity. </p>
+                        
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/eyşan.jpg" alt="">
+                            <span class ="movie-list-item-title">Cansu Dere</span>
+                            <p class="movie-list-item-desc">Eyşan is a beautiful, attractive woman. She is a skilled con artist who has made a career out of manipulating men for their money. She is charming, seductive and ruthless at the same time. She betrayed Omar and became rich and powerful.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/ramiz.jpeg" alt="">
+                            <span class ="movie-list-item-title">Tuncay Kurtiz</span>
+                            <p class="movie-list-item-desc">Uncle Ramiz, as he is known, is a strong-willed man who came to Istanbul in 1971 and vowed to conquer the city. In the series, he stands out with his intelligence, life experience and the way he prioritizes the rules. He took Ömer under his protection in prison and trained him.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/cengiz.jpg" alt="">
+                            <span class ="movie-list-item-title">Yiğit Özşener</span>
+                            <p class="movie-list-item-desc">Cengiz Atay (Yiğit Özşener) is a manipulative man who will do anything for power. He is a talker and believes that he can get out of any situation by talking. He is known for his "Come on" line. He is in love with Eyşan and will do anything for even a single word from her.</p>
+                           
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/kerpeten.jpg" alt="">
+                            <span class ="movie-list-item-title">Barış Falay</span>
+                            <p class="movie-list-item-desc">Kerpeten Ali, as he is known, is the tough young man of the neighborhood, living a poor life. He works with Ömer at an auto repair shop. Cengiz used his father, who was in prison because of him, to convince him to betray Ömer.</p>
+                            
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                    
+                    <h1 class="movie-list-title">More like this</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <a href="https://www.youtube.com/watch?v=DkAHxvoA2Q8&list=PLN6a-WhvxvGIfFaUvR-HkHbVS4Ema7CsM" target="_blank">
+                            <img class ="movie-list-item-img-banner"src="images/vadi.jpg" alt="">
+                            <span class ="movie-list-item-title">Kurtlar Vadisi  </span>
+                            <p class="movie-list-item-desc">Kurtlar Vadisi is a Turkish television series in the action, drama and political genre, which started broadcasting on Show TV on January 15, 2003, with the slogan "This is a mafia series". </p>
+                        
+                        </div>
+                        <div class="movie-list-item">
+                            <a href="https://www.youtube.com/watch?v=qjI8ABmLYMA&list=PLfKEhEBL8yme0NqC-WO-JWBu-ukMXqlFo" target="_blank">
+                            <img class ="movie-list-item-img-banner"src="images/suskunlar.jpg" alt="">
+                            <span class ="movie-list-item-title">Suskunlar</span>
+                            <p class="movie-list-item-desc">The series tells the story of Ecevit, Bilal, İbrahim and Zeki, who grew up like brothers. They end up in prison as a result of an innocent mistake they made as children, and their lives are turned upside down after they are beaten and raped there.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <a href="https://www.youtube.com/@icerde/playlists" target="_blank">
+                            <img class ="movie-list-item-img-banner"src="images/icerde.jpeg" alt="">
+                            <span class ="movie-list-item-title">İçerde</span>
+                            <p class="movie-list-item-desc">Inside is about the crime that affects the lives of two siblings whose mother was murdered. The brothers, who were separated at a young age, grow up, one as a police officer and the other in the criminal world, and come face to face with each other years later.</p>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="searchBar.js"></script>
+    <script src="slider.js"></script>
+    <script src="colorMode.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>
+

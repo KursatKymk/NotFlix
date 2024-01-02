@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "afk-kizilcik.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Adını Feriha Koydum</title>
+</head>
+<body>
+    <!--Navbar yukarıda sidebar sol tarafta-->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class ="logo">NotFlix</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a class = 'menu-list-item' style="font-weight: bold;" href="home.html">Home</a></li>
+                    <li class="menu-list-item1">~All The Content You Are Looking For~</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class = 'profile-picture' src="images/picture.jpeg" alt = "">
+                <div class="profile-text-container">
+                    <span class = "profile-text">Profile</span>
+                    <i id= "downArrow" class="fa-solid fa-caret-down"></i>
+                    <button class="logout-button"id="logoutButton" onclick="logout()">Logout</button>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <!--search bar test-->
+        <div class="search-container">
+            
+            <div class="search-icon" id="searchIcon"><i class="left-menu-icon fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search...">
+          </div>
+        <!--search bar test-->
+        <a href="home.html"><i class="left-menu-icon fa-solid fa-house"></i></a>
+        
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/d8d1faa5ceb88c4c5513d3ec76eff325.png');"
+            >
+            <p class = "featured-desc">The story of doorman Zehra's dreams with her daughter, her daughter's university entrance exam and her scholarship to one of the country's elite universities.Feriha meets by chance Emir Sarrafoğlu.After this encounter, Feriha is pleased with his attention and introduces herself to them as the daughter of a rich family.
+            </p>
+            <a href = "https://www.youtube.com/watch?v=SZqtHBFmP04&list=PLcD5SoBduEo-dQhomhAkfERH8bX8_kBbT">
+                <button class = "featured-button">Watch</button>
+            </a>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Characters</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/798d29bcferiha.jpg" alt="">
+                            <span class ="movie-list-item-title">Hazal Kaya</span>
+                            <p class="movie-list-item-desc">Feriha Yılmaz:In the series, she plays the role of the son of a doorman family. She chases after his love by lying.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/vahide-gordum-500x500.png" alt="">
+                            <span class ="movie-list-item-title">Vahide Gördüm</span>
+                            <p class="movie-list-item-desc">Zehra Yılmaz:She plays the role of Feriha's mother. She plays the role of a devoted mother.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/images.jpeg" alt="">
+                            <span class ="movie-list-item-title">Çağatay Ulusoy</span>
+                            <p class="movie-list-item-desc">Emir Sarrafoğlu:He plays the role of the child of a rich family who grew up in very good conditions. He is in love with Feriha.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/metin-cekmez.jpg" alt="">
+                            <span class ="movie-list-item-title">Metin Çekmez</span>
+                            <p class="movie-list-item-desc">Rıza Yılmaz: He is Feriha's father. He plays the role of a conservative family man.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/s-ea31460ef30d53533d4a7b3e6deae9a13ad0100c.webp" alt="">
+                            <span class ="movie-list-item-title">Ufuk Tan Altunkaya</span>
+                            <p class="movie-list-item-desc">Halil:He is the person to whom Feriha was forcibly engaged. He loves Feriha very much and it is platonic.</p>
+                        </div>
+                        
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+
+
+                    <div class="movie-list-container">
+                        <h1 class="movie-list-title">More Like This</h1>
+                        <div class="movie-list-wrapper">
+                            <div class="movie-list">
+                                <div class="movie-list-item">
+                                    <a href="https://www.youtube.com/watch?v=ICEMRQeZX-s&list=PLZOaduei3CJwVtTa2cpPx5SspnqtU2tOw" target="_blank">
+                                    <img class ="movie-list-item-img-banner"src="images/e61acd33-a051-4fdf-8e70-ec6f7c29e682.jpg" alt="">
+                                    <span class ="movie-list-item-title">Fazilet Hanım ve Kızları </span>
+                                    <p class="movie-list-item-desc">Fazilet Hanım, who lives her life dreaming of a rich life and sees the way to achieve this in her daughters, comes to terms with her anger towards her life and her past through her daughters.</p>
+                                   
+                                
+                                </div>
+                                <div class="movie-list-item">
+                                    <a href="https://www.youtube.com/watch?v=mjtAlKw88Lo&list=PLguVCtIx1ZQG9NXPjczxCf7Eq-A6Hjt6e" target="_blank">
+                                    <img class ="movie-list-item-img-banner"src="images/Dolunay.jpg" alt="">
+                                    <span class ="movie-list-item-title">Dolunay</span>
+                                    <p class="movie-list-item-desc">Nazlı, who wants to be a professional chef, dreams of opening her own restaurant. To make a living, Nazlı becomes the private chef of rich businessman Ferit. Ferit and Nazlı, who become closer through coincidences, experience an impossible love.</p>
+                                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="searchBar.js"></script>
+    <script src="slider.js"></script>
+    <script src="colorMode.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>

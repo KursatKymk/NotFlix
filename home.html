@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <!--Navbar yukarıda sidebar sol tarafta-->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class ="logo">NotFlix</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a class = 'menu-list-item' style="font-weight: bold;" href="index.html">Home</a></li>
+                    <li class="menu-list-item1">~All The Content You Are Looking For~</li>
+                    
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class = 'profile-picture' src="images/picture.jpeg" alt = "">
+                <div class="profile-text-container">
+                    <span class = "profile-text">Profile</span>
+                    <i id= "downArrow" class="fa-solid fa-caret-down"></i>
+                    <button class="logout-button"id="logoutButton" onclick="logout()">Logout</button>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <!--search bar test-->
+        <div class="search-container">
+            <div class="search-icon" id="searchIcon"><i class="left-menu-icon fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search...">
+          </div>
+        <!--search bar test-->
+        <a href="home.html"><i class="left-menu-icon fa-solid fa-house"></i></a>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/yalan.jpg');"
+            >
+            <img class = "featured-title" src = "images/ydunyafis.jpg" alt ="">
+            <p class = "featured-desc">It deals with funny stories of two families living side by side in Cihangir, coming from two extreme lifestyles in Turkey.</p>
+            <a href = "yalandunya.html">
+                <button class = "featured-button">See Page</button>
+            </a>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Other Content</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/doktorlar.png" alt="">
+                            <span class ="movie-list-item-title">Doktorlar</span>
+                            <p class="movie-list-item-desc">The story of a group of young surgons who started training at Turkey's most famous and best hospital.</p>
+                            
+                            <a href = "doktorlar.html">
+                                <button class = "movie-list-item-button">See Page</button>
+                            </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/arka-sokaklar.jpeg" alt="">
+                            <span class ="movie-list-item-title">Arka Sokaklar</span>
+                            <p class="movie-list-item-desc">Family lives and adventures of police officers working in a special team at the Istanbul Police Department.</p>
+                            <a href = "arka_sokaklar.html">
+                                <button class = "movie-list-item-button">See Page</button>
+                            </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/ezel.jpg" alt="">
+                            <span class ="movie-list-item-title">Ezel</span>
+                            <p class="movie-list-item-desc">Ezel struggles to uncover the secrets of the past and achieve justice against his enemies.</p>
+                            <a href = "ezel.html">
+                                <button class = "movie-list-item-button">See Page</button>
+                            </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/kizilcik-serbeti.jpg" alt="">
+                            <span class ="movie-list-item-title">Kızılcık Şerbeti</span>
+                            <p class="movie-list-item-desc">It is a love story between two extreme families whose truth are the same but their methods are different.</p>
+                            <a href = "kizilcik-serbo.html">
+                                <button class = "movie-list-item-button">See Page</button>
+                            </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/adınıFeriha.jpg" alt="">
+                            <span class ="movie-list-item-title">Adını Feriha Koydum</span>
+                            <p class="movie-list-item-desc">Zehra's doughter gets a scholarship to one of the elite universities. In the university exam and her personality discussed.</p>
+                            <a href = "afk.html">
+                                <button class = "movie-list-item-button">See Page</button>
+                            </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/muhyüzyıl.jpg" alt="">
+                            <span class ="movie-list-item-title">Muhteşem Yüzyıl</span>
+                            <p class="movie-list-item-desc">Magnificent Century tells the life of Ottoman Empire Sultan Suleiman I and Hürrem Sultan, and Hürrem Sultan's struggle for the throne for her children.</p>
+                            <a href = "zehraPage.html">
+                                <button class = "movie-list-item-button">See Page</button>
+                            </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/askimemnu.jpg" alt="">
+                            <span class ="movie-list-item-title">Aşkı Memnu</span>
+                            <p class="movie-list-item-desc">It is about Adnan Bey, who is left with his two children named Nihal and Bülent after his wife İnci dies, then he marries Bihter and Bihter cheats on him with Behlül.</p>
+                            <a href = "zehrap2.html">
+                                <button class = "movie-list-item-button">See Page</button>
+                            </a>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="searchBar.js"></script>
+    <script src="slider.js"></script>
+    <script src="colorMode.js"></script>
+    <script src="logout.js"></script>
+
+</body>
+</html>

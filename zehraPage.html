@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "zehraStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Muhteşem Yüzyıl</title>
+</head>
+<body>
+    <!--Navbar yukarıda sidebar sol tarafta-->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class ="logo">Movies</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a class = 'menu-list-item' style="font-weight: bold;" href="home.html">Home</a></li>
+                    <li class="menu-list-item1">~All The Content You Are Looking For~</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class = 'profile-picture' src="images/picture.jpeg" alt = "">
+                <div class="profile-text-container">
+                    <span class = "profile-text">Profile</span>
+                    <i id= "downArrow" class="fa-solid fa-caret-down"></i>
+                    <button class="logout-button"id="logoutButton" onclick="logout()">Logout</button>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+       
+        <div class="search-container">
+            
+            <div class="search-icon" id="searchIcon"><i class="left-menu-icon fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search...">
+          </div>
+        
+          <a href="home.html"><i class="left-menu-icon fa-solid fa-house"></i></a>
+        
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/muhyüzyıl.jpg');"
+            >
+            
+            <p class = "featured-desc"> Muhteşem Yüzyıl deals with palace intrigues by examining the life of Suleiman The First especially from the perspective of family and love.  </p>
+            <a href = "https://www.youtube.com/watch?v=JBaYiSyH3CY&list=PL0rhjW1SWO4Y_nD_IFgoYQVKWddVkZrax">
+                <button class = "featured-button">Watch</button>
+            </a>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">TOP CAST</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/suleym.jpg" alt="">
+                            <span class ="movie-list-item-title">Halit Ergenç </span>
+                            <p class="movie-list-item-desc">Sultan Süleyman: Sultan Süleyman has a great love for Hürrem, and he is afraid from Mustafa, his son from Mahidevran, will dethrone him, just like his own father did to his grandfather.</p>
+                        
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/hurrem.jpg" alt="">
+                            <span class ="movie-list-item-title">Meryem Uzerlik</span>
+                            <p class="movie-list-item-desc">Hürrem Sultan: Hürrem Sultan, who came to the palace as a slave, got stronger over time and had a great love affair with the sultan. She resorts to many intrigues to protect her children.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/mahi.jpg" alt="">
+                            <span class ="movie-list-item-title">Nur Fettahoğlu</span>
+                            <p class="movie-list-item-desc">Mahidevran Sultan: Mahidevran Sultan is Sultan Süleyman's lover before Hürrem Sultan. When Mahidevran Sultan loses Süleyman to Hürrem, she experiences deep pain and her entire focus becomes her son Mustafa.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/ibrahim.jpg" alt="">
+                            <span class ="movie-list-item-title">Okan Yalabık</span>
+                            <p class="movie-list-item-desc">İbrahim Pasha: İbrahim Pasha served Sultan Süleyman while he was still a prince and managed to become his right-hand man. İbrahim, who rose over time, supports Prince Mustafa and he is in an endless power struggle with Hürrem.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/hatıce.jpg" alt="">
+                            <span class ="movie-list-item-title">Selma Ergeç</span>
+                            <p class="movie-list-item-desc">Hatice Sultan: She is the sister of Sultan Suleiman. She is married to İbrahim Pasha and is obsessively in love with him. Because of she is afraid of losing İbrahim, she sees Hürrem as her enemy.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/valide.jpg" alt="">
+                            <span class ="movie-list-item-title">Nebahat Çehre</span>
+                            <p class="movie-list-item-desc">Valide Sultan: She is Süleyman's mother. She manages the harem and often confronts Hürrem because she does not want the order to be disrupted.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/musta.jpg" alt="">
+                            <span class ="movie-list-item-title">Mehmet Günsür</span>
+                            <p class="movie-list-item-desc">Şehzade Mustafa: He is the eldest son of Süleyman. He is Mahidevran's only hope. The fact that he is so loved by the people causes Süleyman to see him as a threat.</p>
+                            
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                    <div class="movie-list-container">
+                        <h1 class="movie-list-title">More Like This</h1>
+                        <div class="movie-list-wrapper">
+                            <div class="movie-list">
+                                <div class="movie-list-item">
+                                    <a href="https://www.youtube.com/watch?v=iljpQO4I40E&list=PLhRiyemLsikzpAD5UtC3Ilo3x3-qVKrpb" target="_blank">
+                                    <img class ="movie-list-item-img-banner"src="images/kösem.jpg" alt="">
+                                    <span class ="movie-list-item-title">Muhteşem Yüzyıl Kösem </span>
+                                    <p class="movie-list-item-desc">Muhteşem Yüzyıl Kösem is a Turkish television series From the same producer as Muhteşem Yüzyıl. Muhteşem Yüzyıl Kösem tells the whole life of Kösem Sultan from slavery to regency and the power struggles in the palace.</p>
+                                   
+                                
+                                </div>
+                                <div class="movie-list-item">
+                                    <a href="https://www.youtube.com/watch?v=5RP-WTa3-x8&list=PLl-nUmcrMx6gp7rBX3bj9W33QhgfPIHrn" target="_blank">
+                                    <img class ="movie-list-item-img-banner"src="images/selcuk.jpg" alt="">
+                                    <span class ="movie-list-item-title">Uyanış Büyük Selçuklu</span>
+                                    <p class="movie-list-item-desc">It deals with the state structure, political events, wars of the Great Seljuk Empire and the life of Sultan Melikşah.</p>
+                                    
+                                </div>
+                                <div class="movie-list-item">
+                                    <a href="https://www.youtube.com/watch?v=uvTeSe5UDrE&list=PLCuVYHE7O2A0XGkdhaU_M4-IkEIq5hSOQ" target="_blank">
+                                    <img class ="movie-list-item-img-banner"src="images/osman.jpg" alt="">
+                                    <span class ="movie-list-item-title">Kuruluş Osman</span>
+                                    <p class="movie-list-item-desc">It tells the foundation of the Ottoman Empire, which would rule for six hundred years, and Osman Bey's relationship with his wives and children.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="searchBar.js"></script>
+    <script src="slider.js"></script>
+    <script src="colorMode.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>

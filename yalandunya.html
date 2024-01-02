@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "tlhstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Yalan Dünya</title>
+</head>
+<body>
+    <!--Navbar yukarıda sidebar sol tarafta-->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class ="logo">NotFlix</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a class = 'menu-list-item' style="font-weight: bold;" href="home.html">Home</a></li>
+                    <li class="menu-list-item1">~All The Content You Are Looking For~</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class = 'profile-picture' src="images/picture.jpeg" alt = "">
+                <div class="profile-text-container">
+                    <span class = "profile-text">Profile</span>
+                    <i id= "downArrow" class="fa-solid fa-caret-down"></i>
+                    <button class="logout-button"id="logoutButton" onclick="logout()">Logout</button>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+       
+        <div class="search-container">
+            
+            <div class="search-icon" id="searchIcon"><i class="left-menu-icon fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search...">
+          </div>
+        
+        <a href="home.html"><i class="left-menu-icon fa-solid fa-house"></i></a>
+       
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/yalantalha.jpg');"
+            >
+            
+            <p class = "featured-desc">Yalan Dünya deals with the funny stories of two families from two extreme lifestyles of Turkey living side by side in Cihangir.  </p>
+            <a href = "https://www.youtube.com/watch?v=9B33MeXdtec&list=PLVwqY9q2mFAxiTnjN-YudlVEJRNUfXUS7">
+                <button class = "featured-button">Watch</button>
+            </a>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">TOP CAST</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/deniz.webp" alt="">
+                            <span class ="movie-list-item-title">Gülse Birsel </span>
+                            <p class="movie-list-item-desc">Deniz Alsancak:   Deniz, who came to Istanbul from Izmir to do departmental acting, moves to the rented apartment of the Kocabaş family after he got the lead role in the series where he will do departmental acting thanks to a coincidence.</p>
+                        
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/rıza.jpg" alt="">
+                            <span class ="movie-list-item-title">Beyazıt Öztürk</span>
+                            <p class="movie-list-item-desc">Rıza Kocabaş: Although Kocabaş was contracted with Nurhayat due to the pressure of his family, he is not interested in her. In the first part of the series, a relationship begins between Riza and Deniz, who Decrees to leave Nurhayat.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/gülistan.jpeg" alt="">
+                            <span class ="movie-list-item-title">Hasibe Eren</span>
+                            <p class="movie-list-item-desc">Gülistan Çakaler: She is a house girl in her forties, with no manners, who is in trouble for skipping class. She and Selahattin have an unhappy marriage.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/selahattin.jpeg" alt="">
+                            <span class ="movie-list-item-title">Olgun Şimşek</span>
+                            <p class="movie-list-item-desc">Selahattin: Selahattin is the Namıyamanlı good-for-nothing son-in-law of the Kocabaş family. He is cheating on Gulistan with his mistress Tulay. Because he can do all kinds of work, he goes from shape to shape in every department.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/tülay.jpeg" alt="">
+                            <span class ="movie-list-item-title">İrem Sak</span>
+                            <p class="movie-list-item-desc">Tülay Ünlü: She is Selahattin's mistress. She is a naive girl who works at the pavilion and is in love with Selahattin.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/emir.jpg" alt="">
+                            <span class ="movie-list-item-title">Sarp Apak</span>
+                            <p class="movie-list-item-desc">Emir Danışman: He is a rich and spoiled actor.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/açılay.jpg" alt="">
+                            <span class ="movie-list-item-title">Nihal Yalçın</span>
+                            <p class="movie-list-item-desc">Açıklay Tan: She is the roommate Deniz met on the set. He likes to stand out with his neuroticism and art.</p>
+                            
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                    <div class="movie-list-container">
+                        <h1 class="movie-list-title">More Like This</h1>
+                        <div class="movie-list-wrapper">
+                            <div class="movie-list">
+                                <div class="movie-list-item">
+                                    <a href="https://www.youtube.com/watch?v=GEwyh7zIY_I&list=PLDBem4OrlfANo1KXzo4sRKqz-uflGTphY" target="_blank">
+                                    <img class ="movie-list-item-img-banner"src="images/avrupayakası.jpeg" alt="">
+                                    <span class ="movie-list-item-title">Avrupa Yakası </span>
+                                    <p class="movie-list-item-desc">Avrupa Yakası is a Turkish television series in the sitcom genre that was broadcast on ATV between 2004 and 2009. The funny story of the Sütçüoğlu family living in Nişantaşı and the employees and relatives of Avrupa Yakası magazine is told.</p>
+                                   
+                                
+                                </div>
+                                <div class="movie-list-item">
+                                    <a href="https://www.youtube.com/watch?v=d2w31NUlYt8&list=PLm3-FYEZRvRdBe2urivbgvDSW0U3lNXZN" target="_blank">
+                                    <img class ="movie-list-item-img-banner"src="images/seksenler.jpeg" alt="">
+                                    <span class ="movie-list-item-title">Seksenler</span>
+                                    <p class="movie-list-item-desc">It tells the story of people living in a small neighborhood of Istanbul in the eighties.</p>
+                                    
+                                </div>
+                                <div class="movie-list-item">
+                                    <a href="https://www.youtube.com/watch?v=dW77dZ1kkJE&list=PLhX7sAsEPhq70roMGeoo-a1HcUNojHV1d" target="_blank">
+                                    <img class ="movie-list-item-img-banner"src="images/cocuklarduymasin.jpeg" alt="">
+                                    <span class ="movie-list-item-title">Çocuklar Duymasın</span>
+                                    <p class="movie-list-item-desc">The marriages, relationships with friends, business lives and small domestic problems of Haluk, the harsh, jeolus man, and Meltem, who is modern, at the peak of her career and never gives up on the expectation of romance, are at the forefront as always.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="searchBar.js"></script>
+    <script src="slider.js"></script>
+    <script src="colorMode.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>

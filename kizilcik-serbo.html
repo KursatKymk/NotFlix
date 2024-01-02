@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "afk-kizilcik.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Kızılcık Şerbeti</title>
+</head>
+<body>
+    <!--Navbar yukarıda sidebar sol tarafta-->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class ="logo">NotFlix</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a class = 'menu-list-item' style="font-weight: bold;" href="home.html">Home</a></li>
+                    <li class="menu-list-item1">~All The Content You Are Looking For~</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class = 'profile-picture' src="images/picture.jpeg" alt = "">
+                <div class="profile-text-container">
+                    <span class = "profile-text">Profile</span>
+                    <i id= "downArrow" class="fa-solid fa-caret-down"></i>
+                    <button class="logout-button"id="logoutButton" onclick="logout()">Logout</button>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <!--search bar test-->
+        <div class="search-container">
+            
+            <div class="search-icon" id="searchIcon"><i class="left-menu-icon fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search...">
+          </div>
+        <!--search bar test-->
+        <a href="home.html"><i class="left-menu-icon fa-solid fa-house"></i></a>
+        
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/KızılcıkŞerbeti.jpg');"
+            >
+            <p class = "featured-desc">Kızılcık Şerbeti is about the striking events that occur after Doğa and Fatih, the children of two families with different cultures, get married in a lightning ceremony.</p>
+            <a href = "https://www.youtube.com/watch?v=X_yBRarj8lE&list=PLusr3qjmF4tA8NqLIba4SEhtyWkL9G6uz&index=46">
+                <button class = "featured-button">Watch</button>
+            </a>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Characters</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/sila-turkoglu-500x500.png" alt="">
+                            <span class ="movie-list-item-title">Sıla Türkoğlu</span>
+                            <p class="movie-list-item-desc">Doğa Korkmaz:Doğa is Kıvılcım's elder daughter. She is idealistic and hardworking like his mother. She is Fatih's wife.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/dogukan-gungor-500x500.png" alt="">
+                            <span class ="movie-list-item-title">Doğukan Güngör</span>
+                            <p class="movie-list-item-desc">Fatih Ünal:He is the youngest son of Abdullah. When he falls in love with Doğa and gets married, it is important for him to get his father's approval.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/evrim-alasya-500x500.png" alt="">
+                            <span class ="movie-list-item-title">Evrim Alasya</span>
+                            <p class="movie-list-item-desc">Kıvılcım Arslan:For Kıvılcım, life consists of principles. She is very organized, systematic and punctual. As her rose in her career, his profession became her identity.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/settar-tanriogen-500x500.png" alt="">
+                            <span class ="movie-list-item-title">Settar Tanriöğen</span>
+                            <p class="movie-list-item-desc">Abdullah Ünal: He is a good family man and a fatherly man. In addition to being a successful man who is devoted to his wife and children, he is also the head of the family.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/sibel-tascioglu-500x500.png" alt="">
+                            <span class ="movie-list-item-title">Sibel Taşçıoğlu</span>
+                            <p class="movie-list-item-desc">Pembe Ünal:For Pembe, life consists of her husband and children. She is a constructive, cheerful, meticulous and organized woman.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/baris-kilic-500x500.png" alt="">
+                            <span class ="movie-list-item-title">Barış Kılıç</span>
+                            <p class="movie-list-item-desc">Ömer Ünal:Ömer is Abdullah Ünal's brother. He is the head of the foreign investments of Ünal Group of Companies.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/mujde-uzman-500x500.png" alt="">
+                            <span class ="movie-list-item-title">Müjde Uzman</span>
+                            <p class="movie-list-item-desc">Alev Arslan:She is Kıvılcım's flighty sister. She does not hold back and says the first thing that comes to her mind.</p>                      
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+
+
+                    <div class="movie-list-container">
+                        <h1 class="movie-list-title">More Like This</h1>
+                        <div class="movie-list-wrapper">
+                            <div class="movie-list">
+                                <div class="movie-list-item">
+                                    <a href="https://www.youtube.com/watch?v=kJiPjewTae4" target="_blank">
+                                    <img class ="movie-list-item-img-banner"src="images/KızılGoncalar.jpg" alt="">
+                                    <span class ="movie-list-item-title">Kızıl Goncalar </span>
+                                    <p class="movie-list-item-desc">Red Goncalar is about the intersecting fates of Levent, a secular Ataturkist, and Meryem, who lives in a bigoted sect.</p>
+                                   
+                                
+                                </div>
+                                <div class="movie-list-item">
+                                    <a href="https://www.youtube.com/watch?v=cOw-QQvHnvM&list=PL35KDZ09WlK8cKpYLY7gM_wZ13zSUM69s" target="_blank">
+                                    <img class ="movie-list-item-img-banner"src="images/indir.jpeg" alt="">
+                                    <span class ="movie-list-item-title">Fatih Harbiye</span>
+                                    <p class="movie-list-item-desc">Neriman, a young girl from Fatih who is stuck between tradition and modernity. On the one hand, Neriman's childhood sweetheart Şinasi, with whom she grew up in Fatih. On the other hand, the handsome Macit, from the wealthy upper class of modern Istanbul.</p>
+                                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="searchBar.js"></script>
+    <script src="slider.js"></script>
+    <script src="colorMode.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>

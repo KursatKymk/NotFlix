@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "zehraStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Aşkı Memnu</title>
+</head>
+<body>
+    <!--Navbar yukarıda sidebar sol tarafta-->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class ="logo">NotFlix</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a class = 'menu-list-item' style="font-weight: bold;" href="home.html">Home</a></li>
+                    <li class="menu-list-item1">~All The Content You Are Looking For~</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class = 'profile-picture' src="images/picture.jpeg" alt = "">
+                <div class="profile-text-container">
+                    <span class = "profile-text">Profile</span>
+                    <i id= "downArrow" class="fa-solid fa-caret-down"></i>
+                    <button class="logout-button"id="logoutButton" onclick="logout()">Logout</button>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+       
+        <div class="search-container">
+            
+            <div class="search-icon" id="searchIcon"><i class="left-menu-icon fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search...">
+          </div>
+        
+          <a href="home.html"><i class="left-menu-icon fa-solid fa-house"></i></a>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/askmem.jpg');"
+            >
+            <p class = "featured-desc">Aşkı Memnu is a Turkish TV series inspired by the book of Halit Ziya Uşaklıgil. It tells about Bihter's marriage with Adnan Bey, who is older than herself, and her forbidden love with Behlül.  </p>
+            <a href = "https://www.youtube.com/watch?v=v-GYCHAc35Y&list=PLcrYdKVzfF1SW5S9na2xGv5BPatFQWgxy">
+                <button class = "featured-button">Watch</button>
+            </a>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">TOP CAST</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/bihter.jpg" alt="">
+                            <span class ="movie-list-item-title">Beren Saat </span>
+                            <p class="movie-list-item-desc">Bihter Ziyagil:  Bihter, the daughter of a money-grubbing mother, marries an older man to spite her mother, but begins to have a deep love for her husband's nephew, Behlül.</p>
+                        
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/adnan.jpg" alt="">
+                            <span class ="movie-list-item-title">Selçuk Yöntem</span>
+                            <p class="movie-list-item-desc">Adnan Ziyagil: After his wife's death, Adnan does not marry for his daughter Nihal for a while and then decides to marry Bihter.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/behlül.webp" alt="">
+                            <span class ="movie-list-item-title">Kıvanç Tatlıtuğ</span>
+                            <p class="movie-list-item-desc">Behlül Haznedar: Behlül lost his family when he was a child, and then Adnan Bey raised him as his own son. He had a love relationship with Bihter, and decided to marry Nihal.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/nihal.jpg" alt="">
+                            <span class ="movie-list-item-title">Hazal Kaya</span>
+                            <p class="movie-list-item-desc">Nihal Ziyagil: After her mother's death, Nihal became very attached to her father and had to deal with problems such as fainting. Matmazel raised her, she wants to marry Behlül and is jealous of him.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/firdevs.webp" alt="">
+                            <span class ="movie-list-item-title">Nebahat Çehre</span>
+                            <p class="movie-list-item-desc">Firdevs Yöreoğlu: Firdevs' cheating on her husband caused her death, so she does not get along well with her daughter, Bihter.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/peyker.webp" alt="">
+                            <span class ="movie-list-item-title">Nur Fettahoğlu</span>
+                            <p class="movie-list-item-desc">Peyker Yöreoğlu: She is Behlül's ex-lover, and she withdrew herself from this love triangle and chaos that occurred when she got married.</p>
+                            
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/matmazel.webp" alt="">
+                            <span class ="movie-list-item-title">Zerrin Tekindor</span>
+                            <p class="movie-list-item-desc">Matmazel: She is Nihal's nanny and does not approve of Adnan Bey's marriage with Bihter.</p>
+                            
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                    <div class="movie-list-container">
+                        <h1 class="movie-list-title">More Like This</h1>
+                        <div class="movie-list-wrapper">
+                            <div class="movie-list">
+                                <div class="movie-list-item">
+                                    <a href="https://www.youtube.com/watch?v=EaXci0EnhPo&list=PLl9kuuBU9PilnQA8Ldcwv6BCEL8LiqqHs"></a>
+                                    <img class ="movie-list-item-img-banner"src="images/sadakatsiz.jpeg" alt="">
+                                    <span class ="movie-list-item-title">Sadakatsiz </span>
+                                    <p class="movie-list-item-desc">The series tells the story of the forbidden love of a married man who cheats on his wife and the events that follow.</p>
+                                   
+                                
+                                </div>
+                                <div class="movie-list-item">
+                                    <a href="https://www.youtube.com/watch?v=YjEfvVX-V9c&list=PLfQotdmGfCty3w2e8CHPspq1FWNQcrHMa" target="_blank">
+                                    <img class ="movie-list-item-img-banner"src="images/kuzey.jpg" alt="">
+                                    <span class ="movie-list-item-title">Kuzey Güney</span>
+                                    <p class="movie-list-item-desc">It is about the love of two brothers for the same girl and the consequences of this love.</p>
+                                    
+                                </div>
+                                <div class="movie-list-item">
+                                    <a href="https://www.youtube.com/watch?v=Bg6idO0U7d8&list=PL5lvu13_TMfD2zL1SeVQva0b0Cwu11vjw" target="_blank"></a>
+                                    <img class ="movie-list-item-img-banner"src="images/yasakel.jpg" alt="">
+                                    <span class ="movie-list-item-title">Yasak Elma</span>
+                                    <p class="movie-list-item-desc">The series begins with a woman finding a girl who will make her husband cheat in order to get high alimony while divorcing her husband, and then continues with many love triangles.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="searchBar.js"></script>
+    <script src="slider.js"></script>
+    <script src="colorMode.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>

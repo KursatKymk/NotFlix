@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: rgb(29, 28, 28);
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'Sen', sans-serif;
+
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    font-family: 'Sen', sans-serif;
+    font-size: 30px;
+    color: #4dbf00;
+}
+
+.menu-container{
+    flex: 6;
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    transition: background-color 0.3s ease;
+      
+}
+
+.menu-list-item{
+    cursor: pointer;
+    margin-right: 30px;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove default underline for links */
+    display: inline-block; /* Ensure padding works correctly */
+}
+.menu-list-item:hover {
+    color: grey;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+    
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.home-background{
+    height: 150vh;
+    background-color: tomato;
+    padding: 50px;
+}
+
+/*Side bar*/
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    align-items: center;
+}
+
+/*search bar test*/
+.search-container {
+    position: relative;
+}
+
+.search-icon {
+    position: relative;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.search-bar {
+    width: 0;
+    padding: 8px;
+    transition: width 0.3s ease;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%; /* Set to the right side of the icon */
+    margin-right: 10px; /* Adjust this margin as needed */
+}
+
+.search-bar.active {
+    width: 200px;
+    opacity: 1;
+}
+/*search bar test*/
+
+.left-menu-icon {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.movie-list-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie-list-container{
+    padding: 20px;
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+.movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movie-list-title{
+    color: white;
+    text-align: center;
+    margin-left: 35px;
+}
+
+.movie-list-item{
+    width: 30%;
+    margin-right: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+}
+
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 270px; 
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.movie-list-item-title{
+    background-color: #333;
+    color: white;
+    padding: 0 10px;
+    font-style: 32px;
+    font-weight: bold;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    display: block;
+    margin-top: 10px;
+    
+}
+
+.movie-list-item-desc{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-style: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    border-radius: 10px;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-item-button{
+    padding: 10px;
+    background-color: #4dbf00;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    text-decoration: none; /* Remove default underline for links */
+    display: inline-block; /* Ensure padding works correctly */
+}
+
+/*Light Mode*/
+.container.active{
+    background-color: white;
+}
+
+.movie-list-title.active{
+    color: black;
+}
+
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+
+.menu-list-item.active{
+    cursor: pointer;
+    margin-right: 30px;
+    color: black;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove default underline for links */
+    display: inline-block; /* Ensure padding works correctly */
+}

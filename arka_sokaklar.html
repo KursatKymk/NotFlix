@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "emirhan_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Arka Sokaklar</title>
+</head>
+<body>
+    <!--Navbar yukarıda sidebar sol tarafta-->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class ="logo">NotFlix</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li><a class = 'menu-list-item' style="font-weight: bold;" href="index.html">Home</a></li>
+                    <li class="menu-list-item1">~All The Content You Are Looking For~</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class = 'profile-picture' src="images/picture.jpeg" alt = "">
+                <div class="profile-text-container">
+                    <span class = "profile-text">Profile</span>
+                    <i id= "downArrow" class="fa-solid fa-caret-down"></i>
+                    <button class="logout-button"id="logoutButton" onclick="logout()">Logout</button>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <!--search bar test-->
+        <div class="search-container">
+            
+            <div class="search-icon" id="searchIcon"><i class="left-menu-icon fa-solid fa-magnifying-glass"></i></div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search...">
+          </div>
+        <!--search bar test-->
+        <a href="index.html"><i class="left-menu-icon fa-solid fa-house"></i></a>
+        
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/arka-sokaklar.jpeg');"
+            >
+            <img class = "featured-title" src = "" alt ="">
+            <p class = "featured-desc">Arka Sokaklar </p> <br>
+            <p class = "featured-sum">Arka Sokaklar" is a Turkish television series in the genres of police, action, drama, and comedy, produced by Erler Film (2006-2022) and D Media (2023-present). Directed by Orhan Oğuz, the series debuted on July 31, 2006. The script was written by Ahmet Yurdakul, Ozan Yurdakul, Sinan Yurdakul, Barkın Şenüren, and Metin Arslan. A long-running show, "Arka Sokaklar" has been on air for 18 years (18 seasons), making it the longest-running weekly series in Turkish television history in terms of broadcast years, seasons, and episode count.</p>
+            <a href = "https://www.youtube.com/@ArkaSokaklarKanalD">
+                <button class = "featured-button">Watch</button>
+            </a>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Top Cast</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/mesut.jpeg" alt="">
+                            <span class ="movie-list-item-title">Şevket Çoruh</span>
+                            <p class="movie-list-item-desc">Mesut Güneri is an important part of the team and a character known for his temper.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/zafer.jpeg" alt="">
+                            <span class ="movie-list-item-title">Zafer Ergin</span>
+                            <p class="movie-list-item-desc">Rıza Soylu is a police chief who is the leader of the team, everyone knows him as Rıza Baba.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/furkan.jpeg" alt="">
+                            <span class ="movie-list-item-title">Furkan Göksel</span>
+                            <p class="movie-list-item-desc">Metin Çoban is the eldest son of Hüsnü Çoban.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/ilker.jpeg" alt="">
+                            <span class ="movie-list-item-title">İlker İnanoğlu</span>
+                            <p class="movie-list-item-desc">Engin Balkan is a 3rd class police chief, one of the oldest members of the team.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/husnu.jpeg" alt="">
+                            <span class ="movie-list-item-title">Özgür Ozan</span>
+                            <p class="movie-list-item-desc">Hüsnü Çoban, ekibin başka bir önemli parçası olan Hüsnü Çoban ayrıca ekibe ilk dahil olanlardandır.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/onur.jpeg" alt="">
+                            <span class ="movie-list-item-title">Onur Bay</span>
+                            <p class="movie-list-item-desc">Hüsnü Çoban, another important part of the team, is also one of the first to join the team.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class ="movie-list-item-img"src="images/alp.jpeg" alt="">
+                            <span class ="movie-list-item-title">Alp Korkmaz</span>
+                            <p class="movie-list-item-desc">Ali Akdoğan is Reza Soylu's son-in-law and a key member of the team.</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">More Like This</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <a href = "https://www.youtube.com/@Behzatc."> 
+                            <img class ="movie-list-item-img-banner"src="images/behzat.jpg" alt="">
+                            <span class ="movie-list-item-title">Behzat Ç: Bir Ankara Polisiyesi</span>
+                            <p class="movie-list-item-desc">
+                                "Behzat Ç. Bir Ankara Polisiyesi" is a Turkish TV series that aired on Star TV (2010-2013) and Blu TV (2019). Inspired by Emrah Serbes's novel, it blends police procedural, adventure, drama, comedy, action, and suspense.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <a href = "https://www.youtube.com/@Adanali"> 
+                            <img class ="movie-list-item-img-banner"src="images/adanali.jpg" alt="">
+                            <span class ="movie-list-item-title">Adanalı</span>
+                            <p class="movie-list-item-desc">
+                                "Adanalı" is a Turkish TV series, produced by Kuzey Prodüksiyon, starring Oktay Kaynarca, Mehmet Akif Alakurt, and Selin Demiratar in action, crime, drama, and comedy genres.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <a href = "https://www.blutv.com/?detailPage=/diziler/yerli/saygi-bir-ercument-cozer-dizisi"> 
+                            <img class ="movie-list-item-img-banner"src="images/saygi.jpg" alt="">
+                            <span class ="movie-list-item-title">Saygı: Bir Ercüment Çözer Dizisi</span>
+                            <p class="movie-list-item-desc">Saygı is a Turkish crime web series, produced by BluTV and Inter Medya, directed by Ali Taner Baltacı and Ender Mıhlar, and starring Nejat İşler, Miray Daner, and Boran Kuzum.</p>
+                        </div>
+                        <div class="movie-list-item">
+                            <a href = "https://puhutv.com/sahsiyet-detay"> 
+                            <img class ="movie-list-item-img-banner"src="images/sahsiyet.jpg" alt="">
+                            <span class ="movie-list-item-title">Şahsiyet</span>
+                            <p class="movie-list-item-desc">Şahsiyet is a 2018 Turkish crime and drama web series. Directed by Onur Saylak and written by Hakan Günday, the series is directed by Ay Yapım and stars Haluk Bilginer, Cansu Dere, Metin Akdülger, Şebnem Bozoklu and Hüseyin Avni Danyal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="searchBar.js"></script>
+    <script src="slider.js"></script>
+    <script src="colorMode.js"></script>
+    <script src="logout.js"></script>
+
+</body>
+</html>
